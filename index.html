@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>学生成绩级别</title>
+
+
+</head>
+
+<body>
+
+      <input type="text" id="x">
+      <input type="button" value="提交" onclick="score()">
+      <!--将从这里跳入进函数-->
+      <script type="text/javascript">
+      function score(){
+      var x = document.getElementById("x").value;//获取数据
+	  if(x >=0 && x < 10)
+		alert("10等生");
+	  else{
+
+		  var y = parseInt(x/10);//将数转化成整数型
+		  switch(y)
+			{
+				case 10:
+				case 9:
+				alert("1等生");
+				break;
+				case 8:
+				alert("2等生");
+				break;
+				case 7:
+				alert("3等生");
+				break;
+				case 6:
+				alert("4等生");
+				break;
+				case 5:
+				alert("5等生");
+				break;
+				case 4:
+				alert("6等生");
+				break;
+				case 3:
+				alert("7等生");
+				break;
+				case 2:
+				alert("8等生");
+				break;
+				case 1:
+				alert("9等生");
+		        break;
+		        default:
+		        alert("不合格的数据类型");
+		    }
+        }
+    }
+    </script>
+      
+     
+
+</body>
+</html>
